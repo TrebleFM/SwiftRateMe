@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftRateMe_Example' do
+  pod 'SwiftRateMe', :path => '../'
+
+  target 'SwiftRateMe_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
