@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/SwiftRateMe.svg?style=flat)](http://cocoapods.org/pods/SwiftRateMe)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftRateMe.svg?style=flat)](http://cocoapods.org/pods/SwiftRateMe)
 
+> A customizable way to prompt users to review your application.
+>
+> Based on https://github.com/arashpayan/appirater/
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

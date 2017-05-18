@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftRateMe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

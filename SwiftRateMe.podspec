@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftRateMe'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SwiftRateMe.'
+  s.summary          = 'A customizable way to prompt users to review your application.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,27 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A customizable way to prompt users to review your application.
+
+Based on https://github.com/arashpayan/appirater/.
                        DESC
 
-  s.homepage         = 'https://github.com/Benjamin Chrobot/SwiftRateMe'
+  s.homepage         = 'https://github.com/TrebleFM/SwiftRateMe'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Benjamin Chrobot' => 'benjamin.chrobot@alum.mit.edu' }
-  s.source           = { :git => 'https://github.com/Benjamin Chrobot/SwiftRateMe.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/TrebleFM/SwiftRateMe.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'SwiftRateMe/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'SwiftRateMe' => ['SwiftRateMe/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'CFNetwork', 'SystemConfiguration'
+  s.weak_frameworks = 'StoreKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
